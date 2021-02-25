@@ -1,40 +1,5 @@
-/*!
-    Title: Dev Portfolio Template
-    Version: 1.2.2
-    Last Change: 03/25/2020
-    Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
-
-    Description: This file contains all the styles associated with the page
-    that don't come from third party libraries. This file gets compiled using
-    Gulp and send to the /css folder which is then loaded on the page.
-*/
-/*
-    File Contents:
-
-        1. Variables
-        2. Mixins
-        3. Global Styles
-        4. Lead Styles
-        5. About Styles
-        6. Experience Styles
-        7. Education Styles
-        8. Project Styles
-        9. Skills Styles
-        10. Contact Styles
-        11. Optional Section Styles
-        12. Media Queries
-*/
-
-/*
-    ------------------------
-    ----- 1. Variables -----
-    ------------------------
-*/
-
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #3cacf7;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -45,14 +10,9 @@ $background-alt: #f2f2f5;
 $border: #dcd9d9;
 
 // Define text colors
-$heading: #374054;
-$text: #74808a;
+$heading: #000000;
+$text: #000000;
 
-/*
-    ---------------------
-    ----- 2. Mixins -----
-    ---------------------
-*/
 
 @mixin transition($duration: 0.5s, $func: ease, $property: all) {
     transition: #{$duration} #{$func} #{$property};
@@ -78,11 +38,6 @@ $text: #74808a;
     }
 }
 
-/*
-    ----------------------------
-    ----- 3. Global Styles -----
-    ----------------------------
-*/
 
 body {
     font-family: 'Lato', sans-serif;
@@ -94,7 +49,6 @@ body {
     }
 }
 
-// No JS styles
 .no-js {
     #experience-timeline {
         > div {
@@ -339,12 +293,6 @@ footer {
     background: $background-alt;
 }
 
-/*
-    --------------------------
-    ----- 4. Lead Styles -----
-    --------------------------
-*/
-
 #lead {
     position: relative;
     height: 100vh;
@@ -439,11 +387,6 @@ footer {
     }
 }
 
-/*
-    ---------------------------
-    ----- 5. About Styles -----
-    ---------------------------
-*/
 
 #about {
     padding: 75px 15px;
@@ -459,11 +402,6 @@ footer {
     }
 }
 
-/*
-    --------------------------------
-    ----- 6. Experience Styles -----
-    --------------------------------
-*/
 
 #experience {
     padding: 50px 15px;
@@ -570,12 +508,6 @@ footer {
     color: #374054;
 }
 
-/*
-    -------------------------------
-    ----- 7. Education Styles -----
-    -------------------------------
-*/
-
 #education {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid $border;
@@ -624,11 +556,6 @@ footer {
     }
 }
 
-/*
-    -------------------------------
-    ----- 8. Project Styles -----
-    -------------------------------
-*/
 
 #projects {
     padding: 50px 15px;
@@ -688,12 +615,6 @@ footer {
     display: none;
 }
 
-/*
-    -------------------------------
-    ----- 9. Skills Styles -----
-    -------------------------------
-*/
-
 #skills {
     padding: 50px 15px;
     text-align: center;
@@ -722,11 +643,6 @@ footer {
     }
 }
 
-/*
-    -------------------------------
-    ----- 10. Contact Styles -----
-    -------------------------------
-*/
 
 #contact {
     padding: 50px 15px;
@@ -787,12 +703,6 @@ footer {
     }
 }
 
-/*
-    ---------------------------------------
-    ----- 11. Optional Section Styles -----
-    ---------------------------------------
-*/
-
 .optional-section {
     padding: 50px 15px;
     text-align: center;
@@ -835,13 +745,6 @@ footer {
     }
 }
 
-/*
-    -----------------------------
-    ----- 12. Media Queries -----
-    -----------------------------
-*/
-
-// Collapse timeline
 @media only screen and (max-width: 750px) {
 
     #experience-timeline {
@@ -870,7 +773,6 @@ footer {
 
 }
 
-// Medium Devices
 @media only screen and (max-width : 992px) {
 
     #lead {
@@ -905,7 +807,6 @@ footer {
 
 }
 
-// Small Devices
 @media only screen and (max-width : 768px) {
 
     header {
@@ -980,7 +881,6 @@ footer {
 
 }
 
-// Extra Small Devices
 @media only screen and (max-width : 480px) {
 
     #lead-content {
